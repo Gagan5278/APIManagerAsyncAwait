@@ -19,6 +19,10 @@ class RootViewController: UIViewController {
         Task {
             do {
                 let service = APIService<Product>()
+                /*
+                service.headers = // some header to be passed here if required
+                service.bodyParameters = // request body to be passed here if required
+                */
                 let product = try await service.callService(
                     with: "https://dummyjson.com/products/1",
                     serviceMethod: .get
