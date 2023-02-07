@@ -179,4 +179,6 @@ xcuserdata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+### MAC OS ###
+*.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/Objective-C,Swift,SwiftPackageManager,Carthage,Xcode,macOS
