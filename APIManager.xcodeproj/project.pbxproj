@@ -123,9 +123,7 @@
 		5D3638342992864800655654 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
-				5D36387F29929AA100655654 /* Utility */,
-				5D36387529928E7100655654 /* Extension */,
-				5D3638682992873000655654 /* Service */,
+				5D8990A22992A567006C02B0 /* Manager */,
 				5D363865299286B600655654 /* Model */,
 				5D8990A02992A2E3006C02B0 /* AppDelegate */,
 				5D8990A12992A304006C02B0 /* RootViewController */,
@@ -209,6 +207,16 @@
 				5D3638392992864800655654 /* RootViewController.swift */,
 			);
 			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		5D8990A22992A567006C02B0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5D36387F29929AA100655654 /* Utility */,
+				5D36387529928E7100655654 /* Extension */,
+				5D3638682992873000655654 /* Service */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
