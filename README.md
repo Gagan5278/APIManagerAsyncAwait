@@ -8,10 +8,14 @@
  func callService(_ sender: Any) {
         Task {
             do {
-                let service = APIService<Product>()
+                let service = APIService<Product>() // Product Model confirms 'Codable'.
+                /*
+                service.headers = // some header to be passed here if required
+                service.bodyParameters = // request body to be passed here if required
+                */
                 let product = try await service.callService(
-                    with: "https://dummyjson.com/products/1",
-                    serviceMethod: .get
+                    with: "https://dummyjson.com/products/1",  // Your desired url
+                    serviceMethod: .get // your HTTP method here
                 )
                 print(product)
             } catch let error {
