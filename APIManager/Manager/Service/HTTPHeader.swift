@@ -17,6 +17,7 @@ enum HTTPHeaders: String {
 extension URLRequest {
     mutating func addHeader(from headers: [String: String]?) {
         guard let headers = headers, !headers.isEmpty else {
+            defaultHeaders()
             return
         }
         
