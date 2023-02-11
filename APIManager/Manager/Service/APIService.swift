@@ -7,12 +7,21 @@
 
 import Foundation
 
-class APIService<T: Codable> {
+protocol APIServiceProtocol {
+    func callService<T: Codable>(
+        with urlString: String,
+        model: T.Type,
+        serviceMethod: HTTPServiceMethod
+    ) async throws -> T
+}
+
+class APIService: APIServiceProtocol {
     var headers: [String: String]?
     var bodyParameters: [String: String]?
     
-    func callService(
+    func callService<T: Codable>(
         with urlString: String,
+        model: T.Type,
         serviceMethod: HTTPServiceMethod
     ) async throws -> T {
         guard let url = URL(string: urlString) else { throw APIManagerError.badURL }

@@ -18,13 +18,14 @@ class RootViewController: UIViewController {
     @IBAction func callService(_ sender: Any) {
         Task {
             do {
-                let service = APIService<Product>()
+                let service = APIService()
                 /*
                 service.headers = // some header to be passed here if required
                 service.bodyParameters = // request body to be passed here if required
                 */
                 let product = try await service.callService(
                     with: "https://dummyjson.com/products/1",
+                    model: Product.self,
                     serviceMethod: .get
                 )
                 print(product)
