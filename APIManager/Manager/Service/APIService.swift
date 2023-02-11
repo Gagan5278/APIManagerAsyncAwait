@@ -8,6 +8,8 @@
 import Foundation
 
 protocol APIServiceProtocol {
+    var headers: [String: String]? {get set}
+    var bodyParameters: [String: String]? {get set}
     func callService<T: Codable>(
         with urlString: String,
         model: T.Type,
@@ -18,6 +20,11 @@ protocol APIServiceProtocol {
 class APIService: APIServiceProtocol {
     var headers: [String: String]?
     var bodyParameters: [String: String]?
+    let apiManager: APIManager
+    // MARK: - init
+    init() {
+        apiManager = APIManager()
+    }
     
     func callService<T: Codable>(
         with urlString: String,
@@ -26,7 +33,6 @@ class APIService: APIServiceProtocol {
     ) async throws -> T {
         guard let url = URL(string: urlString) else { throw APIManagerError.badURL }
         let body = try (bodyParameters ?? [:]).serialize()
-        let apiManager = APIManager()
         return try await apiManager.request(
             url: url,
             httpMethod: serviceMethod,
