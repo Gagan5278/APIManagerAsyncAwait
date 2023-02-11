@@ -7,13 +7,13 @@
 
 import Foundation
 
-final class APIManager {
-    public internal(set) var sessoin: URLSession = .shared
-    
-    static let sharedAPIManager: APIManager = APIManager()
+ class APIManager {
+     private let sessoin: URLSession
     
     // MARK: - init
-    private init() { }
+    init(session: URLSession = .shared) {
+         self.sessoin = session
+     }
 }
 
 extension APIManager {

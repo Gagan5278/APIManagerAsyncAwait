@@ -17,7 +17,8 @@ class APIService<T: Codable> {
     ) async throws -> T {
         guard let url = URL(string: urlString) else { throw APIManagerError.badURL }
         let body = try (bodyParameters ?? [:]).serialize()
-        return try await APIManager.sharedAPIManager.request(
+        let apiManager = APIManager()
+        return try await apiManager.request(
             url: url,
             httpMethod: serviceMethod,
             body: body,
