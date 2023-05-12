@@ -37,7 +37,7 @@ class APIService: APIServiceProtocol {
             url: url,
             httpMethod: serviceMethod,
             body: body,
-            headers: bodyParameters,
+            headers: headers,
             expectingReturnType: T.self)
     }
 }

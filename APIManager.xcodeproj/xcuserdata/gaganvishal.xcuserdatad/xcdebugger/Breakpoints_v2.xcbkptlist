@@ -55,17 +55,124 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4DB0086C-CF97-4066-8B60-BFBE9A6D509C"
+            uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "APIManager/Manager/Service/HTTPHeader.swift"
+            filePath = "APIManagerTests/APIManagerTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "defaultHeaders()"
-            landmarkType = "7">
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - eb22f7ec77b4d89e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; APIManagerTests.APIManagerTests"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - 598db989765ed2f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; APIManagerTests.APIManagerTests"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - 8834aebda547ae6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; APIManagerTests.APIManagerTests"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - 21e729a7a51ddb10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.init(selector: ObjectiveC.Selector) -&gt; APIManagerTests.APIManagerTests"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - e9ad0a4fa2615bb1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.__allocating_init() -&gt; APIManagerTests.APIManagerTests"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - 43a9d9e7618c378e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.init() -&gt; APIManagerTests.APIManagerTests"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "B0FE74A3-823C-49F2-B593-9071AC2C45A3 - f59009076cc301b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APIManagerTests.APIManagerTests.__deallocating_deinit"
+                  moduleName = "APIManagerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gaganvishal/Documents/APIManagerAsyncAwait/APIManagerTests/APIManagerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

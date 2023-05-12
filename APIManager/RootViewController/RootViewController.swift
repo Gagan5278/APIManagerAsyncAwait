@@ -8,7 +8,8 @@
 import UIKit
 
 class RootViewController: UIViewController {
-
+    private let viewModel = RootViewModel(service: APIService())
+    
     // MARK: - View Controller life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,22 +17,39 @@ class RootViewController: UIViewController {
     
     // MARK: - Call dummy service for exaple test
     @IBAction func callService(_ sender: Any) {
-        Task {
-            do {
-                let service: APIServiceProtocol = APIService()
-                /*
-                service.headers = // some header to be passed here if required
-                service.bodyParameters = // request body to be passed here if required
-                */
-                let product = try await service.callService(
-                    with: "https://dummyjson.com/products/1",
-                    model: Product.self,
-                    serviceMethod: .get
-                )
-                print(product)
-            } catch let error {
-                print(error.description)
-            }
+        Task { @MainActor in
+          let product =  try await viewModel.getProductList()
+            print(product)
+        }
+        
+        /*
+         Task { @MainActor in
+         let task =  fetchProductModel()
+         let result =  await task.result
+         switch result {
+         case .success(let product):
+         print(product)
+         case .failure(let error):
+         print(error)
+         }
+         
+         }
+         */
+    }
+    
+    /*
+    func fetchProductModel() -> Task<Product?, Error> {
+        return Task {
+            /*
+            service.headers = // some header to be passed here if required
+            service.bodyParameters = // request body to be passed here if required
+            */
+            return try? await service.callService(
+                with: "https://dummyjson.com/products/1",
+                model: Product.self,
+                serviceMethod: .get
+            )
         }
     }
+     */
 }

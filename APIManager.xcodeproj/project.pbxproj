@@ -28,6 +28,8 @@
 		5D36387B299295E400655654 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36387A299295E400655654 /* APIService.swift */; };
 		5D36387D2992969F00655654 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36387C2992969F00655654 /* Dictionary+Extension.swift */; };
 		5D36388129929AA700655654 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36388029929AA700655654 /* AppUtil.swift */; };
+		5D6FFEFF2A0ECF9F00D84470 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FFEFE2A0ECF9F00D84470 /* RootViewModel.swift */; };
+		5D6FFF012A0ED1D700D84470 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FFF002A0ED1D700D84470 /* MockAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		5D36387A299295E400655654 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5D36387C2992969F00655654 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		5D36388029929AA700655654 /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		5D6FFEFE2A0ECF9F00D84470 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		5D6FFF002A0ED1D700D84470 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				5D8990A22992A567006C02B0 /* Manager */,
-				5D363865299286B600655654 /* Model */,
 				5D8990A02992A2E3006C02B0 /* AppDelegate */,
 				5D8990A12992A304006C02B0 /* RootViewController */,
 				5D36383B2992864800655654 /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				5D36384C2992864900655654 /* APIManagerTests.swift */,
+				5D6FFF002A0ED1D700D84470 /* MockAPIService.swift */,
 			);
 			path = APIManagerTests;
 			sourceTree = "<group>";
@@ -192,6 +196,14 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		5D6FFEFD2A0ECF9200D84470 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D6FFEFE2A0ECF9F00D84470 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5D8990A02992A2E3006C02B0 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +216,8 @@
 		5D8990A12992A304006C02B0 /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5D6FFEFD2A0ECF9200D84470 /* ViewModel */,
+				5D363865299286B600655654 /* Model */,
 				5D3638392992864800655654 /* RootViewController.swift */,
 			);
 			path = RootViewController;
@@ -364,6 +378,7 @@
 				5D36387B299295E400655654 /* APIService.swift in Sources */,
 				5D363867299286DC00655654 /* ProductModel.swift in Sources */,
 				5D36387929928FE800655654 /* Error+Extension.swift in Sources */,
+				5D6FFEFF2A0ECF9F00D84470 /* RootViewModel.swift in Sources */,
 				5D36386E2992892200655654 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6FFF012A0ED1D700D84470 /* MockAPIService.swift in Sources */,
 				5D36384D2992864900655654 /* APIManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
